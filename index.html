@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SilentJobs is building a quieter job search: one daily email with only the jobs that match what you're looking for. Join the waitlist for early access.">
+    <meta name="author" content="SilentJobs">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://silentjobs.app/">
+    <meta property="og:title" content="SilentJobs - Job Alerts Without the Noise">
+    <meta property="og:description" content="We're building one daily email with only the jobs that match what you want. Join the waitlist for early access.">
+
+    <title>SilentJobs - Job Alerts Without the Noise</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">
+                    <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+                        <path d="M20 12v8m0 0v8m0-8h8m-8 0h-8" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#6366f1"/>
+                                <stop offset="100%" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">SilentJobs</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#waitlist" class="btn-nav">Join the Waitlist</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Coming soon
+                    </div>
+                    <h1 class="hero-title">
+                        Job Alerts,<br>
+                        <span class="gradient-text">Without the Noise</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Tired of digging through dozens of job alert emails a day? We're building
+                        SilentJobs to send you one email a day with only the openings that match
+                        what you're looking for.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#waitlist" class="btn-hero btn-primary">
+                            <span>Join the Waitlist</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="#how-it-works" class="btn-hero btn-secondary">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                                <path d="M8 10L10 12L12 10M10 6V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>See How It Will Work</span>
+                        </a>
+                    </div>
+                    <p class="hero-note">Free to join. We'll only email you about SilentJobs early access.</p>
+                </div>
+                <div class="hero-visual">
+                    <div class="mockup-container" role="img" aria-label="Illustration of a SilentJobs daily digest email with example jobs">
+                        <div class="email-mockup">
+                            <div class="email-toolbar">
+                                <div class="toolbar-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="toolbar-title">Inbox</div>
+                                <div class="toolbar-actions"></div>
+                            </div>
+                            <div class="email-header">
+                                <div class="email-from">
+                                    <div class="from-avatar">SJ</div>
+                                    <div class="from-info">
+                                        <div class="from-name">SilentJobs Daily Digest</div>
+                                        <div class="from-email">Example digest</div>
+                                    </div>
+                                </div>
+                                <div class="email-meta">
+                                    <span class="email-time">8:00 AM</span>
+                                    <span class="email-badge">Example</span>
+                                </div>
+                            </div>
+                            <div class="email-subject">
+                                Your daily digest: 5 new jobs that match your filters
+                            </div>
+                            <div class="email-body">
+                                <div class="job-card featured">
+                                    <div class="job-header">
+                                        <div class="company-logo" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">TC</div>
+                                        <div class="job-match-badge">New</div>
+                                    </div>
+                                    <div class="job-title">Senior Financial Analyst</div>
+                                    <div class="job-company">TechCorp</div>
+                                    <div class="job-details">
+                                        <span class="detail">📍 Remote</span>
+                                        <span class="detail">💰 $120k-$150k</span>
+                                        <span class="detail">⏰ Full-time</span>
+                                    </div>
+                                    <div class="job-tags">
+                                        <span class="tag">Financial Modeling</span>
+                                        <span class="tag">Excel</span>
+                                        <span class="tag">SQL</span>
+                                    </div>
+                                </div>
+                                <div class="job-card">
+                                    <div class="job-header">
+                                        <div class="company-logo" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">FI</div>
+                                        <div class="job-match-badge">New</div>
+                                    </div>
+                                    <div class="job-title">Data Analyst</div>
+                                    <div class="job-company">Finance Inc</div>
+                                    <div class="job-details">
+                                        <span class="detail">📍 Hybrid - NYC</span>
+                                        <span class="detail">💰 $95k-$115k</span>
+                                        <span class="detail">⏰ Full-time</span>
+                                    </div>
+                                </div>
+                                <div class="job-card blur">
+                                    <div class="job-header">
+                                        <div class="company-logo" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">BC</div>
+                                        <div class="job-match-badge">New</div>
+                                    </div>
+                                    <div class="job-title">Financial Planning Analyst</div>
+                                    <div class="job-company">Bank Corp</div>
+                                    <div class="job-details">
+                                        <span class="detail">📍 Boston, MA</span>
+                                        <span class="detail">💰 $85k-$105k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mockup-glow"></div>
+                    </div>
+                    <p class="mockup-caption">Illustration only. The companies and jobs shown are made up.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Job Alerts Have Turned Into Noise</h2>
+                <p class="section-subtitle">Job searching shouldn't feel like a second job</p>
+            </div>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">📧</div>
+                    <h3>Inbox Chaos</h3>
+                    <p>Dozens of alert emails a day from different job boards, and only a few are worth opening.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🎯</div>
+                    <h3>Weak Filters</h3>
+                    <p>Most alert filters can't express "remote, or hybrid near me" or "no contract roles," so irrelevant jobs keep coming.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🔁</div>
+                    <h3>Same Jobs Everywhere</h3>
+                    <p>The same opening shows up on several sites and in several emails, so you read it again and again.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⏰</div>
+                    <h3>Time Drain</h3>
+                    <p>Checking each board, skipping duplicates and skimming postings that don't fit adds up to hours every week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What SilentJobs Will Do</h2>
+                <p class="section-subtitle">We're building it now. Here's what it's designed to do.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🎯</div>
+                    </div>
+                    <h3>Your Criteria, Strictly Applied</h3>
+                    <p>Set job titles, locations, remote or hybrid, a salary floor and keywords to exclude. Jobs that don't fit stay out of your digest.</p>
+                    <div class="feature-highlight">You set the rules</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">📅</div>
+                    </div>
+                    <h3>One Daily Digest</h3>
+                    <p>Every match in a single email, at the time of day you choose.</p>
+                    <div class="feature-highlight">One email a day</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🌐</div>
+                    </div>
+                    <h3>One List, Many Sources</h3>
+                    <p>Openings from more than one job board gathered into one list, so you don't have to juggle a dozen separate alerts.</p>
+                    <div class="feature-highlight">Sources added over time</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🚫</div>
+                    </div>
+                    <h3>Each Job Once</h3>
+                    <p>When the same role is posted on several sites, you see it once.</p>
+                    <div class="feature-highlight">No repeats</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🔔</div>
+                    </div>
+                    <h3>Only What's New</h3>
+                    <p>Each digest includes only jobs posted since the last one, so you're not reading about roles that closed weeks ago.</p>
+                    <div class="feature-highlight">New since your last digest</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🔒</div>
+                    </div>
+                    <h3>Your Data Stays Yours</h3>
+                    <p>Your search preferences are used to build your digest and nothing else. We don't sell your data.</p>
+                    <div class="feature-highlight">No selling, no sharing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Will Work</h2>
+                <p class="section-subtitle">Three steps, once it's ready</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-visual">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">⚙️</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Tell Us What You Want</h3>
+                        <p>Set your job titles, locations, salary range, remote or on-site, and anything you want filtered out.</p>
+                        <div class="step-example">
+                            <span class="example-tag">Financial Analyst</span>
+                            <span class="example-tag">Remote</span>
+                            <span class="example-tag">$100k+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-dot"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-visual">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">🔍</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>We Watch for New Openings</h3>
+                        <p>SilentJobs checks for new postings that match your criteria, removes duplicates and drops the ones that don't fit.</p>
+                        <div class="step-example">
+                            <div class="search-animation">
+                                <span class="search-dot"></span>
+                                <span class="search-dot"></span>
+                                <span class="search-dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-connector">
+                    <div class="connector-line"></div>
+                    <div class="connector-dot"></div>
+                </div>
+
+                <div class="step">
+                    <div class="step-visual">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">📬</div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Get One Email</h3>
+                        <p>Your matches arrive in a single digest. Skim it, open the roles you like and apply on the original site.</p>
+                        <div class="step-example">
+                            <span class="example-tag success">✓ 5 New Matches</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questions</h2>
+                <p class="section-subtitle">Where things stand today</p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Is SilentJobs available yet?</summary>
+                    <p>Not yet. We're building it now. Join the waitlist and we'll email you when early access opens.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How much will it cost?</summary>
+                    <p>We haven't set pricing. Joining the waitlist is free and doesn't commit you to anything.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Which job boards will it cover?</summary>
+                    <p>We'll share the first supported sources when early access opens.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>What do you do with my email?</summary>
+                    <p>We use it only to contact you about SilentJobs early access. We don't sell or share it, and you can ask us to delete it at any time. Details are in our <a href="privacy.html">privacy policy</a>.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist Section -->
+    <section id="waitlist" class="waitlist-section">
+        <div class="cta-background">
+            <div class="gradient-orb orb-4"></div>
+            <div class="gradient-orb orb-5"></div>
+        </div>
+        <div class="container">
+            <div class="waitlist-content">
+                <div class="waitlist-header">
+                    <span class="waitlist-badge">
+                        <span class="badge-dot"></span>
+                        Early access
+                    </span>
+                    <h2 class="section-title">Join the Waitlist</h2>
+                    <p class="section-subtitle">Leave your email and we'll let you know when SilentJobs is ready to try.</p>
+                </div>
+
+                <!--
+                    The form posts to the URL in its action attribute. Set it to a form
+                    endpoint (for example https://formspree.io/f/your-form-id) before launch.
+                    While it is empty, submitting shows "Signups aren't open yet" and
+                    nothing is collected.
+                -->
+                <form class="waitlist-form" id="waitlistForm" action="" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="role" name="role" placeholder="Role you're looking for (optional, e.g. Financial Analyst)">
+                    </div>
+                    <button type="submit" class="btn-waitlist">
+                        <span>Join the Waitlist</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <p class="form-status" id="formStatus" role="alert" hidden></p>
+                    <p class="form-note">🔒 We'll only email you about SilentJobs early access. <a href="privacy.html">Privacy policy</a></p>
+                </form>
+
+                <div class="waitlist-success" id="successMessage" hidden>
+                    <div class="success-animation">
+                        <div class="success-icon">✓</div>
+                    </div>
+                    <h3>You're on the list</h3>
+                    <p>Thanks for signing up. We'll email you when early access opens.</p>
+                </div>
+
+                <div class="waitlist-benefits">
+                    <div class="benefit">
+                        <div class="benefit-icon">🎁</div>
+                        <div class="benefit-text">
+                            <strong>Early Access</strong>
+                            <span>Be among the first to try it</span>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">💬</div>
+                        <div class="benefit-text">
+                            <strong>Shape What We Build</strong>
+                            <span>Tell us what your job search needs</span>
+                        </div>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">🔕</div>
+                        <div class="benefit-text">
+                            <strong>No Spam</strong>
+                            <span>Only emails about SilentJobs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <svg class="logo-svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#logo-gradient-footer)"/>
+                            <path d="M20 12v8m0 0v8m0-8h8m-8 0h-8" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="logo-gradient-footer" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#6366f1"/>
+                                    <stop offset="100%" stop-color="#8b5cf6"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">SilentJobs</span>
+                    </a>
+                    <p class="footer-tagline">Job alerts without the noise.</p>
+                    <p class="footer-tagline">Coming soon.</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#waitlist">Join the Waitlist</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:support@silentjobs.app">support@silentjobs.app</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SilentJobs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
