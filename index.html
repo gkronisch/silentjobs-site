@@ -387,12 +387,11 @@
                 </div>
 
                 <!--
-                    The form posts to the URL in its action attribute. Set it to a form
-                    endpoint (for example https://formspree.io/f/your-form-id) before launch.
-                    While it is empty, submitting shows "Signups aren't open yet" and
-                    nothing is collected.
+                    The form posts to the Formspree endpoint in its action attribute.
+                    Signups show up in the Formspree dashboard and by email.
+                    If the action is emptied, submitting shows "Signups aren't open yet".
                 -->
-                <form class="waitlist-form" id="waitlistForm" action="" method="post">
+                <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/xeaaykbe" method="post">
                     <div class="form-row">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
